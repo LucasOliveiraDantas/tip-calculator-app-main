@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container-main">
+        <img class="img-logo" src="images/logo.svg" alt="image logo" />
+        <div class="container-calculate">
+          <div class="area-input">
+            <div class="section-bill">
+              <label class="label-bill">Bill</label>
+              <div class="area-value-bill">
+                <img
+                  src="images/icon-dollar.svg"
+                  alt="icon dollar"
+                  class="icon-sign"
+                />
+                <input
+                  aria-label="input-bill"
+                  id="input-bill"
+                  type="text"
+                  placeholder="0"
+                />
+              </div>
+            </div>
+            <div class="section-tip">
+              <label class="label-tip">Select Tip %</label>
+              <div class="area-key-tip">
+                <button onclick="Calc_Tip(5)" class="key-tip">5%</button>
+                <button onclick="Calc_Tip(10)" class="key-tip">10%</button>
+                <button onclick="Calc_Tip(15)" class="key-tip">15%</button>
+                <button onclick="Calc_Tip(25)" class="key-tip">25%</button>
+                <button onclick="Calc_Tip(50)" class="key-tip">50%</button>
+                <input
+                  class="key-tip key-tip-custom"
+                  type="text"
+                  placeholder="Custom"
+                  aria-label="input-key-tip-custom"
+                />
+              </div>
+            </div>
+            <div class="section-people">
+              <label class="label-people">Number of People</label>
+              <div class="area-value-people">
+                <img
+                  src="images/icon-person.svg"
+                  alt="icon person"
+                  class="icon-person"
+                />
+                <input
+                  id="input-people"
+                  type="text"
+                  aria-label="input-people"
+                  placeholder="0"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="area-output">
+            <div class="section-total-tip">
+              <label class="label-total-tip">
+                Tip Amount
+                <br />
+                <span>/ person</span>
+              </label>
+              <input
+                id="input-total-tip"
+                type="text"
+                aria-label="input-result-total-tip"
+                placeholder="$ 0.00"
+              />
+            </div>
+            <div class="section-total-bill">
+              <label class="label-total-bill">
+                Total
+                <br />
+                <span>/ person</span>
+              </label>
+              <input
+                id="input-total-bill"
+                type="text"
+                disabled="disabled"
+                aria-label="input-result-total-bill"
+                placeholder="$ 0.00"
+              />
+            </div>
+            <button onclick="reset()" id="btn-reset">Reset</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Bill Select Tip % 5% 10% 15% 25% 50% Custom Number of People Tip Amount /
+    person Total / person Reset -->
+
+    <script src="app.js"></script>
+  </body>
+</html>

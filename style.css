@@ -1,0 +1,254 @@
+@import url(/root.css);
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Space Mono', monospace;
+}
+
+input {
+  outline: none;
+}
+
+main {
+  display: flex;
+  background-color: var(--color-bg-main);
+  justify-content: center;
+}
+/*///////////////////////////////////COntainer main///////*/
+.container-main {
+  display: grid;
+  justify-items: center;
+  margin: 3.15rem 0rem 0rem 0rem;
+}
+.img-logo {
+  width: 87px;
+  height: 54px;
+}
+/*///////////////////////////////////COntainer calculate///*/
+.container-calculate {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: var(--color-bg-container-calculate);
+  margin-top: 2.5rem;
+  border-radius: 1.5rem 1.5rem 0rem 0rem;
+}
+/*///////////////////////////////////ARea input//////////*/
+.area-input {
+  margin: 2rem;
+}
+/*///////////////////////////////////SEction bill//////////*/
+.section-bill {
+}
+.area-value-bill {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.35rem;
+  background-color: var(--color-bg-input-area-input);
+  border-radius: 0.2rem;
+  padding: 0.65rem 1.2rem;
+  cursor: pointer;
+}
+
+.icon-sign {
+  width: 11px;
+  height: 17px;
+}
+#input-bill {
+  font-size: 24px;
+  font-weight: 700;
+  width: 120px;
+  text-align: end;
+  border: none;
+  background-color: transparent;
+  color: var(--color-text-input-bill);
+}
+/*///////////////////////////////////SEction tip//////////*/
+.section-tip {
+  margin-top: 1.98rem;
+}
+.area-key-tip {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 1rem;
+  width: 100%;
+  gap: 1rem 1.1rem;
+}
+.key-tip {
+  width: 146.5px;
+  height: 48px;
+  border: none;
+  border-radius: 0.3rem;
+  background-color: var(--color-bg-key-tip);
+  font-size: 24px;
+  font-weight: 700;
+  font-family: 'Space Mono', monospace;
+  color: var(--color-text-key-tip);
+  cursor: pointer;
+}
+.key-tip:hover {
+  background-color: var(--color-bg-key-tip-hover);
+  color: hsl(183, 100%, 15%);
+}
+.key-tip-custom {
+  background-color: transparent;
+  text-align: end;
+  padding: 0.85rem;
+}
+.key-tip-custom:hover {
+  background-color: transparent;
+}
+.key-tip-custom::placeholder {
+  font-weight: 700;
+  color: hsl(186, 14%, 43%);
+}
+/*///////////////////////////////////SEction people//////*/
+.section-people {
+  margin-top: 2rem;
+}
+.area-value-people {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.35rem;
+  background-color: var(--color-bg-input-area-input);
+  border-radius: 0.2rem;
+  padding: 0.65rem 1rem;
+  cursor: pointer;
+}
+.icon-person {
+  width: 13px;
+  height: 16px;
+}
+#input-people {
+  font-size: 24px;
+  font-weight: 700;
+  width: 120px;
+  text-align: end;
+  border: none;
+  background-color: transparent;
+  color: var(--color-text-input-bill);
+}
+/*///////////////////////////////////ARea output//////////*/
+.area-output {
+  background-color: var(--color-bg-area-output);
+  border-radius: 0.9rem;
+  margin: 0rem 1.5rem;
+  padding: 2.4rem 1.5rem 1.4rem 1.5rem;
+}
+/*///////////////////////////////////SEction total tip////*/
+.section-total-tip {
+  display: flex;
+  justify-content: space-between;
+}
+.label-total-tip {
+  color: hsl(0, 0%, 100%);
+}
+.label-total-tip span {
+  font-size: 12.5px;
+}
+#input-total-tip {
+  background-color: transparent;
+  border: none;
+  font-size: 32px;
+  font-weight: 700;
+  width: 110px;
+  text-align: end;
+  color: var(--color-text-total-tip);
+}
+/*///////////////////////////////////SEction total bill////*/
+.section-total-bill {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.45rem;
+}
+.label-total-bill {
+  color: hsl(0, 0%, 100%);
+}
+.label-total-bill span {
+  font-size: 12.5px;
+}
+#input-total-bill {
+  background-color: transparent;
+  border: none;
+  font-size: 32px;
+  font-weight: 700;
+  width: 110px;
+  text-align: end;
+  color: var(--color-text-total-bill);
+}
+#btn-reset {
+  width: 100%;
+  height: 50px;
+  margin-top: 1.58rem;
+  background-color: var(--color-bg-btn-reset);
+  border: none;
+  border-radius: 0.3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: var(--color-text-btn-reset);
+  cursor: pointer;
+}
+#btn-reset:hover {
+  background-color: hsl(185, 41%, 84%);
+}
+@media screen and (min-width: 1024px) {
+  /*///////////////////////////////////COntainer main///////*/
+
+  .container-main {
+    height: 100vh;
+  }
+  /*///////////////////////////////////COntainer calculate///*/
+
+  .container-calculate {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 2.5rem 0rem;
+    border-radius: 1.5rem;
+    height: 460px;
+  }
+  /*///////////////////////////////////ARea input//////////*/
+  .area-input {
+    margin: 3rem 1rem 3rem 3rem;
+  }
+  /*///////////////////////////////////SEction tip//////////*/
+  .section-tip {
+    margin-top: 3rem;
+  }
+  .area-key-tip {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .key-tip {
+    width: 120px;
+    height: 48px;
+  }
+  /*///////////////////////////////////ARea output//////////*/
+  .area-output {
+    margin: 2rem 2rem;
+    margin-bottom: 3.5rem;
+    padding: 3.2rem 3rem 1.5rem 3rem;
+  }
+  /*///////////////////////////////////SEction total tip////*/
+  #input-total-tip::placeholder {
+    color: hsl(172, 67%, 45%);
+  }
+  /*///////////////////////////////////SEction total bill////*/
+
+  .section-total-bill {
+    margin-top: 3.5rem;
+  }
+  #btn-reset {
+    margin-top: 8rem;
+  }
+  #input-total-bill::placeholder {
+    color: hsl(172, 67%, 45%);
+  }
+}
